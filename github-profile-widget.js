@@ -56,5 +56,5 @@
     <div id="badge"></div>
   `;
 
-  customElements.define("github-badge", GithubProfileWidget);
+  customElements.define("github-profile-widget", GithubProfileWidget);
 })();
