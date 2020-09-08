@@ -22,8 +22,6 @@ workflows:
   pipeline:
     jobs:
       - release:
-          requires:
-            - test
           filters:
             branches:
               only: master
