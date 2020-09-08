@@ -22,26 +22,37 @@
         "load",
         async (event) => {
           this.data = await this.getUserData();
+
+          if (this.data.message) {
+            this.badge.innerHTML = `
+              <div class="inner">
+                <p>${this.data.message.split("(")[0]}</p>
+                <p>Please try again in a minute.</p>
+              </div>
+            `;
+            return false;
+          }
+
           this.badge.innerHTML = `
-          <div class="inner">
-            <a href=${this.data.html_url}>
-              <img src=${this.data.avatar_url} />
-            </a>
-            <h2>${this.data.name}</h2>
-            <p>${this.data.bio}</p>
-            <p>${this.data.company}</p>        
-            <div>
-              <a class="button" href=https://github.com/${this.data.login}?tab=repositories>
-                Public repos: ${this.data.public_repos}
+            <div class="inner">
+              <a href=${this.data.html_url}>
+                <img src=${this.data.avatar_url} />
               </a>
-              <a class="button" href=https://github.com/${this.data.login}?tab=followers>
-                Followers: ${this.data.followers}
-              </a>
-              <a class="button" href=https://github.com/${this.data.login}?tab=following>
-                Following: ${this.data.following}
-              </a>
-            </div>        
-          </div>
+              <h2>${this.data.name}</h2>
+              <p>${this.data.bio}</p>
+              <p>${this.data.company}</p>        
+              <div>
+                <a class="button" href=https://github.com/${this.data.login}?tab=repositories>
+                  Public repos: ${this.data.public_repos}
+                </a>
+                <a class="button" href=https://github.com/${this.data.login}?tab=followers>
+                  Followers: ${this.data.followers}
+                </a>
+                <a class="button" href=https://github.com/${this.data.login}?tab=following>
+                  Following: ${this.data.following}
+                </a>
+              </div>        
+            </div>
           `;
         },
         { once: true }
