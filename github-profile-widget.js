@@ -27,9 +27,20 @@
             <a href=${this.data.html_url}>
               <img src=${this.data.avatar_url} />
             </a>
-            <h3>${this.data.name}</h3>
+            <h2>${this.data.name}</h2>
             <p>${this.data.bio}</p>
-            <p>${this.data.company}</p>          
+            <p>${this.data.company}</p>        
+            <div>
+              <a class="button" href=https://github.com/${this.data.login}?tab=repositories>
+                Public repos: ${this.data.public_repos}
+              </a>
+              <a class="button" href=https://github.com/${this.data.login}?tab=followers>
+                Followers: ${this.data.followers}
+              </a>
+              <a class="button" href=https://github.com/${this.data.login}?tab=following>
+                Following: ${this.data.following}
+              </a>
+            </div>        
           </div>
           `;
         },
@@ -45,6 +56,18 @@
         text-align: center;
       }
       
+      .button {
+        display: inline-block;
+        margin: 8px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      .button:hover {
+        color: #2ea44f;
+      }
+
       img {
         width: 100px;
         border-radius: 50%;
