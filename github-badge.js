@@ -24,9 +24,12 @@
           this.data = await this.getUserData();
           this.badge.innerHTML = `
           <div class="inner">
-            <img src=${this.data.avatar_url} />
+            <a href=${this.data.html_url}>
+              <img src=${this.data.avatar_url} />
+            </a>
             <h3>${this.data.name}</h3>
-            <p>${this.data.bio}</p>          
+            <p>${this.data.bio}</p>
+            <p>${this.data.company}</p>          
           </div>
           `;
         },
