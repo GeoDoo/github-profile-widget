@@ -1,0 +1,29 @@
+version: 2.1
+orbs:
+  node: circleci/node@3.0.0
+
+executors:
+  common:
+    docker:
+      - image: circleci/node:12.18.1
+
+jobs:
+  release:
+    executor: common
+    steps:
+      - checkout
+      - run:
+          command: npm ci
+      - run:
+          command: npm rum release
+
+workflows:
+  version: 2
+  pipeline:
+    jobs:
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
