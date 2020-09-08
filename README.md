@@ -20,7 +20,7 @@ or you can use npm or yarn:
 $ npm install --save github-profile-widget
 $ yarn install --save github-profile-widget
 ```
-## Live demo
+## Live demo
 You can check the widget on the footer of my blog: https://geodoo.work
 
 ## Contributing
