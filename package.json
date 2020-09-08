@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/GeoDoo/github-profile-widget.git"
   },
-  "keywords": [],
+  "keywords": [
+    "webcomponent",
+    "web-component",
+    "web component",
+    "Web Component"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

@@ -8,6 +8,12 @@
 ## How to use
 ```html
 <github-profile-widget username="GeoDoo"></github-profile-widget>
+<script src="https://npmcdn.com/github-profile-widget@<version-you-want>/github-profile-widget.js"></script>
+```
+
+or you can use npm or yarn:
+```bash
+$ npm install --save github-profile-widget
 ```
 
 ## License
