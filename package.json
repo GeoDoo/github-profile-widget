@@ -1,0 +1,35 @@
+{
+  "name": "github-badge",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "github-badge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoDoo/github-badge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeoDoo/github-badge/issues"
+  },
+  "homepage": "https://github.com/GeoDoo/github-badge#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+}
