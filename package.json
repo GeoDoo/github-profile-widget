@@ -18,7 +18,7 @@
     "responsive"
   ],
   "author": "Georgios Karametas",
-  "license": "LGPL2.1",
+  "license": "GNU Lesser General Public License v2.1",
   "bugs": {
     "url": "https://github.com/GeoDoo/github-profile-widget/issues"
   },
@@ -38,5 +38,6 @@
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": ["github-profile-widget.js", "README.md"]
 }
