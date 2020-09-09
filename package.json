@@ -14,10 +14,11 @@
     "webcomponent",
     "web-component",
     "web component",
-    "Web Component"
+    "Web Component",
+    "responsive"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Georgios Karametas",
+  "license": "LGPL2.1",
   "bugs": {
     "url": "https://github.com/GeoDoo/github-profile-widget/issues"
   },
