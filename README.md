@@ -33,4 +33,4 @@ You can check the widget on the footer of my blog: https://geodoo.work
 
 ## License
 
-This work is licensed under the [GPL-3.0 License](LICENSE.md).
+This work is licensed under the [GNU LESSER GENERAL PUBLIC LICENSE](LICENSE).
